@@ -1,0 +1,13 @@
+.user{
+    align-items: center;
+    display: flex;
+}
+
+span{
+    margin: 10px;
+    font-size: 20px
+}
+
+.arrow{
+    width: 15px;
+}
