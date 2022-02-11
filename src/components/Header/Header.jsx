@@ -3,11 +3,11 @@ import classes from './Header.module.css';
 import {SearchBar} from "../SearchBar";
 import {User} from "../User";
 
-const Header = () => {
+const Header = ({setQuery,search}) => {
     return (
         <header className={classes.header}>
-            <h1 className={classes.title}>Movie Catalog</h1>
-            <SearchBar/>
+            <span className={classes.title}>Movie Catalog</span>
+            <SearchBar setQuery={setQuery} search={search}/>
             <User/>
         </header>
     );

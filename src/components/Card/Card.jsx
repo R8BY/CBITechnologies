@@ -1,16 +1,16 @@
 import React from 'react';
 import classes from './Card.module.css';
-import noPhotos from '../../images/image-placeholder.png'
-const Card = () => {
+
+const Card = ({poster,title,year,id,type}) => {
     return (
         <div className={classes.card}>
             <div className={classes.posterCard}>
-                <img className={classes.poster} src={noPhotos} alt="poster"/>
+                <img className={classes.poster} src={poster} alt="poster"/>
                 <ul className={classes.infoCard}>
-                    <li>Name: Batman</li>
-                    <li>Year: 2005</li>
-                    <li>imdbID: 530</li>
-                    <li>Type: movie</li>
+                    <li>Name: {title}</li>
+                    <li>Year: {year}</li>
+                    <li>imdbID: {id}</li>
+                    <li>Type: {type}</li>
                 </ul>
             </div>
         </div>
