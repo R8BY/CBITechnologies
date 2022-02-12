@@ -1,4 +1,5 @@
 .clear_page{
     border: 1px solid black;
     min-height: 100px;
+    align-items: center;
 }

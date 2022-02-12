@@ -5,7 +5,6 @@ import {ClearPage} from "./Pages/ClearPage";
 
 function App() {
     const [query, setQuery] = useState('');
-
     return (
     <div className={classes.App}>
         <div className={classes.container}>

@@ -3,6 +3,7 @@ import {SearchInfo} from '../components/SearchInfo'
 import {Cards} from "../components/Cards";
 import URL from "../constvalues/api"
 import classes from './ClearPage.module.css'
+import {Pagination} from "../components/Pagination";
 
 const ClearPage = ({query}) => {
 
@@ -39,6 +40,7 @@ const ClearPage = ({query}) => {
         <div className={classes.clear_page}>
             <SearchInfo searchQuery={query} totalResults={results} />
             {isLoaded ? <h1>Loading...</h1> : <Cards cards={cards} />}
+            {results ? <Pagination initPage={page} totalResults={results} perPage={10} onCurrentPageChange={setPage}/> : null}
         </div>
     );
 };

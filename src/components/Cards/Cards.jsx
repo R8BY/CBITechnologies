@@ -6,7 +6,7 @@ const Cards = ({cards}) => {
     return (
         <div className={classes.card}>
             {cards.map(({Title, Year, imdbID, Type, Poster}) => (
-                <Card poster={Poster} title={Title} year={Year} id={imdbID} type={Type}/>
+                <Card key={imdbID} poster={Poster} title={Title} year={Year} id={imdbID} type={Type}/>
             ))}
         </div>
     );

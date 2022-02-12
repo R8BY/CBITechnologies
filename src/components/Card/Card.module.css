@@ -4,6 +4,8 @@
     align-items: center;
     width: 224px;
     border: 1px solid red;
+    margin: 10px;
+    padding:0;
 }
 
 .poster {
